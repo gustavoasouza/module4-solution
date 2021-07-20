@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Solution Starter</title>
+    
+</head>
+<body>
+    <h1>Module 4 Solution Starter</h1>
+    <script>
+        var speakWord1 = "Hello";
+        function helloSpeaker(name) {
+            console.log(speakWord1 + " " + name);
+        }
+        var speakWord2 = "Good Bye";
+
+        function byeSpeaker(name) {
+            console.log(speakWord2 + " " + name);
+        }
+        (function () {
+
+            var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+    
+   
+            for (var i = 0; i < names.length; i++) {
+    
+      
+            var firstLetter = names[i].charAt(0).toLowerCase();
+    
+            if (firstLetter == 'j') {
+                byeSpeaker(names[i]);
+            } else {
+                helloSpeaker(names[i]);
+            }
+      
+        }
+    
+        })();
+
+    </script>
+</body>
+</html>
